@@ -2,7 +2,7 @@ import os
 import random as r
 ############################################################################################
 def check():      #CHECKS IF FOLDER IS ALREADY PERSENT
-    if not os.path.isdir("E:\\Encryption-Key"):
+    if not os.path.isdir("E:\\Encryption-Key"):      #SPECIFY YOUR DIRECTORY OR IT WILL TAKE DRIVE E AS DEFAULT
         os.mkdir("E:\\Encryption-Key")
 ############################################################################################
 def keypass(k):   #ENCRYPTS THE KEY IN A FILE UNDER THE DIRECTORY
