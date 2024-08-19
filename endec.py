@@ -1,9 +1,11 @@
 import os
 import random as r
-def check():
+############################################################################################
+def check():      #CHECKS IF FOLDER IS ALREADY PERSENT
     if not os.path.isdir("E:\\Encryption-Key"):
         os.mkdir("E:\\Encryption-Key")
-def keypass(k):
+############################################################################################
+def keypass(k):   #ENCRYPTS THE KEY IN A FILE UNDER THE DIRECTORY
     check()
     f=open("E:\\Encryption-Key\\key.txt", "w")
     z=''
@@ -12,7 +14,8 @@ def keypass(k):
         z=z+i+str(ran)
     f.write(z)
     f.close()    
-def encrypt():
+############################################################################################
+def encrypt():    #ENCRYPTS THE TEXT
     f=open("D:\\pythonpro\\encryptiondecryption\\encryptedfile.txt", "w")
     s=input("Enter The Text You Want To Encrypt : ")
     final=''
@@ -36,7 +39,8 @@ def encrypt():
     print("File Successfully Encrypted\n")
     f.write(final)
     f.close()
-def decrypt():
+############################################################################################
+def decrypt()::    #DECRYPTS THE TEXT
     f=open("D:\\pythonpro\\encryptiondecryption\\encryptedfile.txt", "r")
     r=f.read()
     f.close()
@@ -60,6 +64,7 @@ def decrypt():
             print(' '.join(word))
         else:
             print("Error : User Has Denied Access!\n")
+############################################################################################
 while True:
     x=int(input("Welcome To Encrypt/Decrypt Centre :-\n1 ---> Encrypt\n2 ---> Decrypt\n0 ---> Exit\n"))        
     if x==1:
