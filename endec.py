@@ -40,7 +40,7 @@ def encrypt():    #ENCRYPTS THE TEXT
     f.write(final)
     f.close()
 ############################################################################################
-def decrypt()::    #DECRYPTS THE TEXT
+def decrypt():    #DECRYPTS THE TEXT
     f=open("D:\\pythonpro\\encryptiondecryption\\encryptedfile.txt", "r")
     r=f.read()
     f.close()
